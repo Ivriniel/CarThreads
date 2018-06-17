@@ -39,9 +39,7 @@
             this.labelError = new System.Windows.Forms.Label();
             this.buttonStop = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.textBoxTimeInGarage = new System.Windows.Forms.TextBox();
-            this.textBoxTimeInQueue = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
@@ -112,6 +110,7 @@
             this.textBoxGarageNumber.Name = "textBoxGarageNumber";
             this.textBoxGarageNumber.Size = new System.Drawing.Size(160, 20);
             this.textBoxGarageNumber.TabIndex = 3;
+            this.textBoxGarageNumber.Text = "2";
             // 
             // textBoxCarAmount
             // 
@@ -119,6 +118,7 @@
             this.textBoxCarAmount.Name = "textBoxCarAmount";
             this.textBoxCarAmount.Size = new System.Drawing.Size(160, 20);
             this.textBoxCarAmount.TabIndex = 5;
+            this.textBoxCarAmount.Text = "10";
             // 
             // buttonRun
             // 
@@ -158,28 +158,13 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Time in garage [ms]";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(392, 55);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Time to next try [ms]";
-            // 
             // textBoxTimeInGarage
             // 
             this.textBoxTimeInGarage.Location = new System.Drawing.Point(395, 26);
             this.textBoxTimeInGarage.Name = "textBoxTimeInGarage";
             this.textBoxTimeInGarage.Size = new System.Drawing.Size(100, 20);
             this.textBoxTimeInGarage.TabIndex = 4;
-            // 
-            // textBoxTimeInQueue
-            // 
-            this.textBoxTimeInQueue.Location = new System.Drawing.Point(395, 70);
-            this.textBoxTimeInQueue.Name = "textBoxTimeInQueue";
-            this.textBoxTimeInQueue.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTimeInQueue.TabIndex = 7;
+            this.textBoxTimeInGarage.Text = "3000";
             // 
             // panel2
             // 
@@ -212,9 +197,7 @@
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBoxTimeInQueue);
             this.Controls.Add(this.textBoxTimeInGarage);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.labelError);
@@ -294,9 +277,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel garages;
-        private System.Windows.Forms.TableLayoutPanel queue;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -306,11 +286,11 @@
         private System.Windows.Forms.Label labelError;
         private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxTimeInGarage;
-        private System.Windows.Forms.TextBox textBoxTimeInQueue;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        public System.Windows.Forms.TableLayoutPanel garages;
+        public System.Windows.Forms.TableLayoutPanel queue;
     }
 }
 
